@@ -1,0 +1,22 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url('/images/stars.png');
+    background-size: cover;
+    background-repeat: repeat;
+}
+html {
+    margin: auto;
+}
+h3 {
+    margin: auto;
+}
+
+h2 {
+    margin: auto;
+}
+h1{
+    margin: auto;
+}
+

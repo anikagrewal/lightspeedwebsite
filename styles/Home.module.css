@@ -1,21 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323:wght@200;300;400;500;600;700;800&display=swap');
 
-
-.body, .html {
+.body {
   margin: 0;
-  padding: 0;
 }
 
 .main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-image: url('/images/stars.png');
   color: white;
   font-family: 'montserrat', sans-serif;
+  margin: auto;
 }
 
 .header {
-  font-size: 70px;
+  font-size: 96px;
+  font-family: 'VT323', sans-serif;
+  margin-left: 20rem;
+  margin-top: 2rem;
+}
+
+.beware {
+  margin-top: 10rem;
+  display: flex;
+}
+.blkhole {
+  font-size: 90px;
+  width: 30rem;
+  margin-left: 5rem;
+  z-index: 2;
+}
+
+.img {
+  z-index: 1;
+
+}
+
+.gameHeader {
+  display: flex;
+  margin-left: 5rem;
+  font-size: 32px;
+}
+
+.attention {
+  margin-top: 5rem;
+}
+
+.fast {
+  margin-left: 5rem;
+  font-size: 25px;
+}
+
+.playbtn {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  width: 15rem;
+  height: 5rem;
+  font-size: 30px;
+  background-color: rgba(103, 227, 241, 0.155);
+  border: 2px solid rgb(90, 199, 212);
+  color: white;
+}
+
+.game {
+  margin-top: 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.basics {
+  margin-left: 5rem;
+  background-color: rgba(0, 0, 0, 0.624);
+  width: 35rem;
+  height: 30rem;
+}
+
+.basTxt {
+  font-size: 30px;
+  margin-left: 2rem;
+}
+
+.sun {
+  float: right;
+  margin-right: 2rem;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+}
+
+.mini {
+  background-color: rgba(0, 0, 0, 0.624);
+  width: 35rem;
+  height: 12rem;
+  margin-bottom: 6rem;
+}
+
+.miniTxt {
+  font-size: 30px;
+  margin-left: 2rem;
+}
+
+.plan {
+  background-color: rgba(0, 0, 0, 0.624);
+ width: 35rem;
+ height: 12rem;
+}
+
+.planTxt {
+  font-size: 30px;
+  margin-left: 2rem;
+}
+
+.card {
+  float: right;
+  margin-top: -5rem;
+}
+
+.load {
+  float: right;
+  margin-top: -5rem;
+  margin-right: 2rem;
+}
+
+.characters {
+  margin-top: 10rem;
+}
+
+.comp {
+  margin-top: 10rem;
+}
+
+.high {
+  margin-top: 10rem;
 }

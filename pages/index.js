@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Nav from '@/components/NavBar'
+import VideoPromo from '@/components/PromoVideo'
+import FooterBar from '@/components/Footer'
+import Carousel from '@/components/Carousel'
 
 export default function Home() {
   return (
@@ -15,24 +18,54 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <Nav/>
-      <div id="home">
-    <h1 className={styles.header}>Light Speed</h1>
+      <div >
+    <VideoPromo/>
       </div>
-      <div id="Play Now">
-        <h2>Play Now </h2>
+      <div className={styles.attention}>
+        <h3 className={styles.fast}>For the Fastest Astronaut</h3>
+      <h1 className={styles.header}>Light Speed</h1>
+      <button className={styles.playbtn}>Play Now</button>
         </div>
-        <div>
-          <div id="link1">
-        <h2>Learn the basics </h2>
+        <div className={styles.beware}>
+          <h1 className={styles.blkhole}>BEWARE OF THE BLACKHOLE</h1>
+          <Image className={styles.img}src="/images/blackhole.png" width={1200} height={800}/>
           </div>
-          <div id="link2">
-            <h2>Understand the mini games</h2>
-          </div>
-          <div id="link3">
-            <h2>Game Plan</h2>
-          </div>
-        
+          <div className={styles.game}>
+            <h2 className={styles.gameHeader}>GAME OVERVIEW</h2>
+           <div className={styles.container}>
+            <div className={styles.basics}>
+              <p className={styles.basTxt}>Learn the Basics</p>
+            <Image className={styles.sun} src="/images/sun.png" width={395} height={385}/>
+            </div>
+            <div className={styles.rightCol}>
+              <div className={styles.mini}>
+              <p className={styles.miniTxt}>Mini Games</p>
+            <Image className={styles.card} src="/images/card.png" width={200} height={200}/>
+                </div>
+              <div className={styles.plan}>
+              <p className={styles.planTxt}>Game Plan</p>
+            <Image className={styles.load} src="/images/plan.png" width={170} height={170}/>
+                </div>
+            </div>
+           </div>
         </div>
+        <div className={styles.characters}>
+          <h2 className={styles.gameHeader}>MEET THE CHARACTERS</h2>
+          <Carousel/>
+        </div>
+        <div className={styles.comp}>
+          <h2 className={styles.gameHeader}>COMPANIONS</h2>
+        </div>
+        <div className={styles.high}>
+          <h2 className={styles.gameHeader}>HIGHLIGHTS</h2>
+          <h4>"One of the best online board games around!"</h4>
+          <p>-Nancy Burnaby BC</p>
+          <h4>"The mini games keep you on the edge of your seats!"</h4>
+          <p>-Jayden ON </p>
+          <h4>"The theme is a really cool concept!"</h4>
+          <p>-Lilly AB</p>
+        </div>
+        <FooterBar/>
       </main>
     </>
   )
