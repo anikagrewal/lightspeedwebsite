@@ -35,12 +35,12 @@ export default function Home() {
            <div className={styles.container}>
             <div className={styles.basics}>
               <p className={styles.basTxt}>Learn the Basics</p>
-            <Image className={styles.sun} src="/images/sun.png" width={395} height={385}/>
+            <Image className={styles.sun} src="/images/sun1.png" width={395} height={385}/>
             </div>
             <div className={styles.rightCol}>
               <div className={styles.mini}>
               <p className={styles.miniTxt}>Mini Games</p>
-            <Image className={styles.card} src="/images/card.png" width={200} height={200}/>
+            <Image className={styles.card} src="/images/card1.png" width={200} height={200}/>
                 </div>
               <div className={styles.plan}>
               <p className={styles.planTxt}>Game Plan</p>

@@ -32,19 +32,33 @@ export default function VideoPromo() {
                 document.removeEventListener('keydown', pauseVideo);
             };
         }, [isPlaying]);
+        useEffect(() => {
+            const video= videoRef.current;
+            video.play();
+
+            return () => {
+                video.pause();
+                video.currentTime = 0
+            }
+        }, []);
 
         const handlePlayPause = () => {
             setIsPlaying(!isPlaying);
         };
 
     return (
+        <div> 
         <div className={styles.videoContainer}>
             <video ref={videoRef} autoPlay className={styles.video}>
                 <source src="/promovideo.mp4" type="video/mp4" />
             </video>
-            <button className={styles.playpauseBtn} onClick={handlePlayPause}>
+           
+        </div>
+        <div className={styles.btn}>
+        <button className={styles.playpauseBtn} onClick={handlePlayPause}>
                 {isPlaying ? 'Pause' : 'Play'}
             </button>
+            </div>
         </div>
     )
 }

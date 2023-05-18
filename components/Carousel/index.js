@@ -6,10 +6,10 @@ export default function Carousel() {
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = [
-    "/carousel-images/player1.png",
-    "/carousel-images/player2.png",
-    "/carousel-images/player3.png",
-    "/carousel-images/player4.png",
+    "/carousel-images/players1.png",
+    "/carousel-images/players2.png",
+    "/carousel-images/players3.png",
+    "/carousel-images/players4.png",
   ];
 
   const changeImage = (direction) => {
