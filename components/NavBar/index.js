@@ -5,8 +5,9 @@ import Link from 'next/link'
 export default function Nav() {
     return( 
         <nav className={styles.navContainer}>
+            
             <div className={styles.left}>
-         
+            <Image src="/favicon.png" width={60} height={60}/>
         <Link className={styles.link}href="#home">
         LightSpeed
         </Link>
@@ -18,21 +19,17 @@ export default function Nav() {
         Play Now
         </Link>
         <Link className={styles.link} href="#game">
-      Game Overview
+        Game Overview
       </Link>
        
         <Link className={styles.link} href="#link1">
-        Link 1
+        Blog 
         </Link>
         
         <Link className={styles.link} href="#link2">
-        Link 2
+        Media
         </Link>
-       
-        <Link className={styles.link} href="#link3">
-        Link 3
-        </Link>
-       
+
         </div>
         </nav>
     )
