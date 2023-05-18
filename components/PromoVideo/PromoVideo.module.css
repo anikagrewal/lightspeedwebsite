@@ -1,0 +1,27 @@
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: 55rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.playpauseBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-color: #fff;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 5;
+}
