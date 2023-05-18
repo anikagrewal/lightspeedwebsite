@@ -1,9 +1,8 @@
 .videoContainer {
-    position: relative;
+    
     width: 100%;
     height: 55rem;
     overflow: hidden;
-    z-index: 1;
 }
 
 .video {
@@ -13,15 +12,21 @@
 }
 
 .playpauseBtn {
-    position: relative;
     display: flex;
     justify-content: center;
     width: 4rem;
     height: 4rem;
     border-radius: 5rem;
-    background-color: #fff;
+    border: none;
+    background-color: #69cad4d3;
     color: black;
     font-size: 14px;
     cursor: pointer;
-    z-index: 5;
+    text-align: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
 }
