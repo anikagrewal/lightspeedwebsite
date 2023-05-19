@@ -2,9 +2,7 @@ body{
     width: 100%;
     height: 100%;
     margin: 0;
-    background-image: url('/images/stars.png');
-    background-size: cover;
-    background-repeat: repeat;
+    background-color: black;
 }
 html {
     margin: auto;
@@ -20,3 +18,6 @@ h1{
     margin: auto;
 }
 
+p {
+    font-size: 18px;
+}
