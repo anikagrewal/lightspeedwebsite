@@ -19,18 +19,23 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <Nav/>
-      <div >
+      <div id="home">
     <VideoPromo/>
       </div>
-        <div className={styles.beware}>
-        <div className={styles.attention}>
+      <div id="playnow" className={styles.attention}>
         <h3 className={styles.fast}>For the Fastest Astronaut</h3>
       <h1 className={styles.header}>Light Speed</h1>
       <button className={styles.playbtn}>Play Now</button>
         </div>
+        <div className={styles.beware}>
+        <div className={styles.des}>
+          <h1 className={styles.warning}>BEWARE OF THE BLACKHOLE</h1>
+          <p>As you gear up to travel across the solar system in an all out spacecraft race, beware of the many challenges ahead of you. Watch out for meteorites and aliens, hold on to your map, keep your memory sharp, and keep track of your fuel! Take the lead and be the first one back to the Sun and most importantly... don't be swept up by the blackhole.</p>
+          <p>Ready.. Set.. Go!</p>
+          </div>
           <Image className={styles.img}src="/images/blackhole.png" width={1200} height={800}/>
           </div>
-          <div className={styles.game}>
+          <div id="game" className={styles.game}>
             <h2 className={styles.gameHeader}>GAME OVERVIEW</h2>
            <div className={styles.container}>
             <div className={styles.basics}>
@@ -49,7 +54,7 @@ export default function Home() {
             </div>
            </div>
         </div>
-        <div className={styles.characters}>
+        <div id="charac" className={styles.characters}>
           <h2 className={styles.gameHeader}>MEET THE CHARACTERS</h2>
           <div className={styles.caro}>
           <Carousel/>
@@ -59,6 +64,30 @@ export default function Home() {
           <h2 className={styles.gameHeader}>COMPANIONS</h2>
          <div className={styles.alicar}> <AlienCar/>
          </div>
+        </div>
+
+
+        <div  id="about" className={styles.about}>
+        <h2 className={styles.gameHeader}>ABOUT US</h2>
+        <div className={styles.content}>
+        <h3>MD3 Design Team</h3>
+        <p>Meet the design team! Each member has had a hand in creating the game assets, prototypes, music, and testing to make sure it is ready for the world! </p>
+        <div className={styles.md3}>
+        <h4>Anika</h4>
+        <h4>Ivona</h4>
+        <h4>Kyle</h4>
+        <h4>Jacob</h4>
+        </div>
+        
+        <h3>FSWD Development Team</h3>
+        <p>Meet the development team! Each memeber has had a hand in bringing all the assets together to create a well produced high functioning game for you and the world to take part of!</p>
+        <div className={styles.fswd}>
+        <h4>Moh</h4>
+        <h4>Jamie</h4>
+        <h4>Tony</h4>
+        <h4>Devynn</h4>
+        </div>
+        </div>
         </div>
         <div className={styles.high}>
           <h2 className={styles.gameHeader}>HIGHLIGHTS</h2>

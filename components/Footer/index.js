@@ -13,7 +13,7 @@ return (
         <div className={styles.sec}>
             <h4>Studios</h4>
             <h4>BCIT Burnaby MD3</h4>
-            <h4>BCIT Downtown FWSD</h4>
+            <h4>BCIT Downtown FSWD</h4>
             <p>©LightSpeed 2023</p>
         </div>
         <div className={styles.third}>
@@ -24,7 +24,10 @@ return (
     
     </div>
      <div className={styles.altcontainer}>
+        <div className={styles.sub}>
      <h1>Subscribe</h1>
+     <h4>To our email to receive notifications on the latest news</h4>
+     </div>
      <div className={styles.input}>
      <input className={styles.ema} type="email" name="email" placeholder="Enter your email"/>
      <button className={styles.btn}>SUBSCRIBE</button>

@@ -17,8 +17,7 @@
 .header {
   font-size: 96px;
   font-family: 'VT323', sans-serif;
-  margin-left: 15rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .beware {
@@ -40,28 +39,33 @@
 .gameHeader {
   display: flex;
   justify-content: center;
-  margin-left: 5rem;
-  font-size: 32px;
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
 }
 
 .attention {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 5rem;
 }
 
 .fast {
-  margin-left: 5rem;
-  font-size: 25px;
+  margin-left: 20rem;
+  font-size: 30px;
 }
 
 .playbtn {
   margin-top: 5rem;
-  margin-left: 5rem;
   width: 15rem;
   height: 5rem;
   font-size: 30px;
   background-color: rgba(103, 227, 241, 0.155);
   border: 2px solid rgb(90, 199, 212);
   color: white;
+  cursor: pointer;
 }
 
 .game {
@@ -76,7 +80,8 @@
 
 .basics {
   margin-left: 5rem;
-  background-color: rgba(0, 0, 0, 0.624);
+  background-color: rgba(103, 227, 241, 0.155);
+  border: 2px solid rgb(90, 199, 212);
   width: 35rem;
   height: 30rem;
 }
@@ -98,7 +103,8 @@
 }
 
 .mini {
-  background-color: rgba(0, 0, 0, 0.624);
+  background-color: rgba(103, 227, 241, 0.155);
+  border: 2px solid rgb(90, 199, 212);
   width: 35rem;
   height: 12rem;
   margin-bottom: 6rem;
@@ -110,7 +116,8 @@
 }
 
 .plan {
-  background-color: rgba(0, 0, 0, 0.624);
+  background-color: rgba(103, 227, 241, 0.155);
+  border: 2px solid rgb(90, 199, 212);
  width: 35rem;
  height: 12rem;
 }
@@ -132,11 +139,11 @@
 }
 
 .characters {
-  margin-top: 25rem;
+  margin-top: 20rem;
 }
 
 .comp {
-  margin-top: 20rem;
+  margin-top: 15rem;
 }
 
 .high {
@@ -171,4 +178,45 @@
 
 .alicar {
   margin-top: 5rem;
+}
+
+.about {
+  margin-top: 15rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.md3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  font-size: 20px;
+  margin-bottom: 6rem;
+}
+
+.fswd {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  font-size: 20px;
+}
+
+.des {
+  margin-left: 3rem;
+  margin-top: 6rem;
+}
+
+.warning {
+  font-size: 50px;
+  margin-bottom: 4rem;
 }

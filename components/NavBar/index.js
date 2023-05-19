@@ -1,34 +1,39 @@
 import styles from './NavBar.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
+import React from 'react'
 
 export default function Nav() {
+    const scrollToSection = (id) => {
+      const element = document.getElementById(id);
+      element.scrollIntoView({behavior: 'smooth'});
+    };
+  
     return( 
         <nav className={styles.navContainer}>
             
             <div className={styles.left}>
             <Image src="/favicon.png" width={60} height={60}/>
-        <Link className={styles.link}href="#home">
+        <a className={styles.link} onClick={() => scrollToSection('home')}>
         LightSpeed
-        </Link>
+        </a>
        
         </div>
         <div className={styles.right}>
        
-        <Link className={styles.link} href="#playNow">
+        <a className={styles.link} onClick={() => scrollToSection('playnow')}>
         Play Now
-        </Link>
-        <Link className={styles.link} href="#game">
+        </a>
+        <a className={styles.link} onClick={() => scrollToSection('game')}>
         Game Overview
-      </Link>
-       
-        <Link className={styles.link} href="#link1">
-        Blog 
-        </Link>
+      </a>
+     
+        <a className={styles.link} onClick={() => scrollToSection('charac')}>
+        Characters
+        </a>
         
-        <Link className={styles.link} href="#link2">
-        Media
-        </Link>
+        <a className={styles.link} onClick={() => scrollToSection('about')}>
+        About Us
+        </a>
 
         </div>
         </nav>
